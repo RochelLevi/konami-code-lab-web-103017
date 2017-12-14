@@ -7,7 +7,7 @@ function init() {
   body.addEventListener('keydown', function(e) {
     const key = parseInt(e.detail || e.which)
     clickPattern.push(key)
-    console.log(clickPattern)
+
     for (let i = 0; i < clickPattern.length; i++){
       if (clickPattern[i] != code[i]){
         clickPattern = []
